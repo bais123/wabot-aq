@@ -381,9 +381,9 @@ module.exports = {
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Telah Menjadi Admin```')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Bukan Admin lagi```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) m.reply(text)
         break
